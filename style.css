@@ -1,0 +1,18 @@
+header{
+    color: aliceblue;
+    background-color: rgb(88, 231, 49);
+}
+.heading{
+    color:gold ;
+    background-color: #d11b1b;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+span{
+    color: #df0a0a;
+}
+li{
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+}
