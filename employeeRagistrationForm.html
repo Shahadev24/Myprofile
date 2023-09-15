@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration Form</title>
+    <link rel="shortcut icon" href="developer.png" type="image/x-icon" />
+    <style>
+      *{
+        font-size: 25px;
+      }
+      body{
+        background-color: rgb(242, 155, 155);
+      }
+      body:hover{
+        background-color: aqua;
+      }
+      input[type="text"]{
+        text-transform: capitalize;
+      }
+      input[type="text"]:hover{
+        color: rgb(252, 250, 250);
+        background-color: coral;
+      }
+      input[type="email"]:hover{
+        color: aliceblue;
+        background-color: blue;
+      }
+      legend{
+        border: 5px solid black;
+      }
+      fieldset{
+        border: 5px solid black;
+      }
+      h2{
+        padding: 5px;
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- <h2> Employee Registration Form </h2>
+    <label for="Fname">First Name</label> <input type="text" id="Fname"><br><br>
+    <label for="Lname">Last Name</label> <input type="text" id="Lname"> -->
+    <h1>Employee Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                 <h2>Employee Registration Form</h2>
+            </legend>
+        
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="First Name"
+                required
+                maxlength="12"
+                autofocus
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for=""> Your Last Name </label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Last Name"
+                required
+                maxlength="12"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for=""> Mobile</label></td>
+            <td>
+              <input
+                type="number"
+                placeholder="8856458246"
+                maxlength="13"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input type="email" required placeholder="Ex.abc@gmail.com" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">password</label></td>
+            <td><input type="password" required placeholder="*********" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Select Gender</label></td>
+            <td>
+              <input type="radio" name="gender" /> <label for="">male</label>
+              <input type="radio" name="gender" /> <label for="">Female</label>
+              <input type="radio" name="gender" /> <label for="">other</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for=""> Select State</label></td>
+            <td>
+              <select>
+                <option value="MH">Maharashatra</option>
+                <option value="RJ">Rajsthan</option>
+                <option value="Up">Uttar pradesh</option>
+                <option value="MP">Madhya pradesh</option>
+                <option value="BH">Bihar</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">Country</label></td>
+            <td><input type="text" value="India" readonly disabled></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Upload Profile Photo</label></td>
+            <td><input type="file"></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Upload Mark Sheets</label></td>
+            <td> <input type="file" multiple></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Permanent Address </label></td>
+            <td><textarea cols="30" rows="10"></textarea></td>
+          </tr>
+
+          <tr>
+            <td><button type="reset">Reset</button></td>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </fieldset>
+    </form>
+  </body>
+</html>

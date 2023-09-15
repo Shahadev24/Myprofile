@@ -4,27 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Summery</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        li{
+            list-style-type: none;
+        }
+        h2{
+            border: 5px solid royalblue;
+            border-radius: 50px;
+            color: brown;
+            background-color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            text-decoration: underline;
+            
+        }
+        h2::selection{
+            color: black;
+            background-color: aqua;
+        }
+        h2::before{
+            content: "🟧";
+        }
+        li{
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: 500;
+            color: blue;
+        }
+        li::before{
+            content: "👉";
+        }
+        li::selection{
+            color: bisque;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <h2 class="heading">Career Objective</h2>
-    <p class="sub_heading">TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
     <p>
-        <h2 class="heading">Professional Summery</h2>
+        <h2>Professional Summery</h2>
         <ul>
-            <li style="background-color: aqua;">Having 1 years of experience in developing Single page Web Applications using <span>Angular8</span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
+            <li>Having 1 years of experience in developing Single page Web Applications using Angular8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
             <li>Experience on working with version control system- GIT and GitHub</li>
-            <li style="background-color: rgb(20, 108, 108);">Experience working with JIRA for user stories abd bug tracking</li>
+            <li>Experience working with JIRA for user stories abd bug tracking</li>
             <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
-            <li style="background-color: rgb(241, 84, 131);">Working exposure on ID's like VS CODE and Notepad++</li>
+            <li>Working exposure on ID's like VS CODE and Notepad++</li>
             <li>Good working experience under Agile methodologies environment</li>
-            <li style="background-color: rgb(171, 68, 231);">Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+            <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
             <li>Knowledge of NodeJS</li>
-            <li style="background-color: rgb(23, 116, 144);">Ability to work with people at all levels in the program</li>
-            <li>Knowledge of Mongodb and expressJS </li>
+            <li>Ability to work with people at all levels in the program</li>
         </ul>
     </p>
 </body>

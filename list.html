@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists in html</title>
+    <style>
+        *{
+            list-style-type: none;
+        }
+        /* .hobbies{
+            list-style-type: lower-latin;/* [lower-alpha, latin, roman, greek] [upper-alpha, latin, roman]*/
+        h2::before{
+            content: "🔴";
+        }
+        
+        .hobbies li::before{
+            content: "👉";
+        }
+        #techStack li::before{
+            content: "👉";
+        }
+        .mainItem::before{
+            content: "🟧";
+        }
+
+        .mainItem ul li::before{
+           content: "🔸";
+        }
+        li::before{
+            content: "🔸";
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>My Hobbies</h2>
+    <ol class="hobbies" type="I">
+        <li>Reading</li>
+        <li>watching movies</li>
+        <li>Listening Music</li>
+        <li>Coding</li>
+        <li>Gaming</li>
+        <li>Traveling</li>
+    </ol>
+    <hr>
+    <h2>My technology stack</h2>
+    <ul id="techStack">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>JAVA</li>
+        <li>Spring and Hibernate</li>
+        <li>ORM Tools</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>typeScript</li>
+        <li>Oracle</li>
+        <li>MongoDB</li>
+    </ul>
+    <hr>
+    <h2>My technology stack - Frontend, Backend and Database</h2>
+    <ol class="uiBackendTechStack">
+        <li class="mainItem">Frontend(UI) technology</li>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Angular </li>
+            <li>React JS</li>
+            <li>Express JS</li>
+        </ul>
+        <li class="mainItem">Bankend Technology</li>
+        <ol>
+            <li>Core Java</li>
+            <li>Java 1.8</li>
+            <li>Spring and Spring boot</li>
+            <li>ORM tools</li>
+            <ul>
+                <li>Hibernate</li>
+                <li>JPA</li>
+                <li>Top Link</li>
+            </ul>
+            <li>Microservices</li>
+            <li>Reactive Programming</li>
+        </ol>
+        <li class="mainItem">Database</li>
+        <ol>
+            <li>Oracle</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+        </ol>
+        <li class="mainItem">Tools</li>
+    </ol>
+</body>
+</html>
