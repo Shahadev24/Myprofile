@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans&family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #e1ccf4;
+        }
+        .section{
+            height: 700px;
+            width: 80%;
+            background-color: antiquewhite;
+            margin-left: 140px;
+            border-radius: 20px;
+        }
+        .container{
+            height: 600px;
+            width: 80%;
+            background-color: aquamarine;
+            left: 10%;
+            top: 50px;
+            position: relative;
+            border-radius: 15px;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            padding-top: 30px;
+            font-family: 'Bebas Neue', sans-serif;
+            text-decoration: underline;
+            letter-spacing: 5px;
+            color: darkorange;
+            font-size: xx-large;
+        }
+        p{
+            font-size: x-large;
+            font-family: 'Inclusive Sans', sans-serif;
+            text-align: center;
+            font-weight: 700;
+        }
+        label{
+            margin-top: 5px;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+        label,input{
+            display: block;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-left: 80px;
+            width: 80%;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #button{
+            width: 80.5%;
+            margin-top: 30px;
+            background-color: darkorange;
+        }
+
+         
+         
+    </style>
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h1>DISCOUNT CALCULATOR</h1>
+            <P>Enter the Bill Amount and discount in percentage</P>
+            <label for="">Bill Amount</label>
+            <input type="number" id="num1">
+            <label for="">Discount Percentage</label>
+            <input type="number" id="num2">
+            <input type="button" value="Calculate" id="button">
+            <label for="">Total Discount Amount</label>
+            <input type="text" id="discount">
+        </div>
+    </section>
+    <script>
+        
+        document.getElementById("button").addEventListener("click", function() {
+            // Get the bill amount and discount percentage from the input fields
+            var billAmount = parseFloat(document.getElementById("num1").value);
+            var discountPercentage = parseFloat(document.getElementById("num2").value);
+
+            // Calculate the total discount amount
+            var totalDiscount = (billAmount * discountPercentage) / 100;
+
+            // Display the total discount amount in the "discount" input field
+            document.getElementById("discount").value = totalDiscount.toFixed(2);
+        });
+
+    </script>
+</body>
+</html>
